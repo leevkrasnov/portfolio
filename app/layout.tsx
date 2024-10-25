@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { montserrat } from './ui/fonts';
 import './globals.css';
+import Header from './components/Header';
 
 export const metadata: Metadata = {
   title: 'Lev Krasnov',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
