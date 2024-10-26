@@ -1,10 +1,7 @@
-import Header from './components/Header';
-
 export default function Home() {
   return (
     <div className="">
-      <Header />
-      {/* <p className="text-xl">
+      <p className="text-xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde mollitia
         quo non debitis error aspernatur repellat suscipit eum voluptates
         dolorem veniam fuga ratione, ab pariatur corrupti tempore culpa
@@ -27,7 +24,7 @@ export default function Home() {
         quibusdam rem soluta totam dicta voluptatum porro nihil, perspiciatis
         nostrum reiciendis repudiandae provident veniam iure fugiat! Sunt
         deleniti soluta nesciunt?
-      </p> */}
+      </p>
     </div>
   );
 }
