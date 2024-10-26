@@ -8,7 +8,7 @@ const Header = () => {
     <header className="nav-block">
       <Link href="./" className="nav-element">
         <House
-          strokeWidth={0.9}
+          strokeWidth={1}
           className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10"
         />
       </Link>

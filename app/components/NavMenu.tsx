@@ -11,7 +11,7 @@ const NavMenu = () => {
       <Link
         href="/projects"
         className={`nav-element ${
-          pathname === '/projects' ? 'text-gray-800 scale-110' : 'text-gray-600'
+          pathname === '/projects' ? 'text-gray-800 scale-110' : 'text-gray-700'
         }`}
       >
         Проекты
@@ -19,7 +19,7 @@ const NavMenu = () => {
       <Link
         href="/about"
         className={`nav-element ${
-          pathname === '/about' ? 'text-gray-800 scale-110' : 'text-gray-600'
+          pathname === '/about' ? 'text-gray-800 scale-110' : 'text-gray-700'
         }`}
       >
         Обо мне
@@ -27,7 +27,7 @@ const NavMenu = () => {
       <Link
         href="/contact"
         className={`nav-element ${
-          pathname === '/contact' ? 'text-gray-800 scale-110' : 'text-gray-600'
+          pathname === '/contact' ? 'text-gray-800 scale-110' : 'text-gray-700'
         }`}
       >
         Контакты
