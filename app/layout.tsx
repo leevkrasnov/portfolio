@@ -3,8 +3,8 @@ import { montserrat } from './ui/fonts';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Lev Krasnov',
-  description: 'Frontend developer portfolio',
+  title: 'Лев Краснов',
+  description: 'Портфолио Front-end web development',
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={`${montserrat.className} antialiased`}>{children}</body>
     </html>
   );

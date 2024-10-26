@@ -1,22 +1,18 @@
-'use client';
 import Link from 'next/link';
 
-const NavMenu = (): JSX.Element => {
+const NavMenu = () => {
   return (
-    <div className="nav-block">
-      <Link href="./" className="nav-link">
-        Home
-      </Link>
-      <Link href="pages/projects" className="nav-link">
+    <nav className="flex items-center justify-center space-x-4 md:space-x-8 lg:space-x-20">
+      <Link href="/projects" className="nav-element">
         Projects
       </Link>
-      <Link href="pages/about" className="nav-link">
+      <Link href="/about" className="nav-element">
         About
       </Link>
-      <Link href="pages/contact" className="nav-link">
+      <Link href="/contact" className="nav-element">
         Contact
       </Link>
-    </div>
+    </nav>
   );
 };
 

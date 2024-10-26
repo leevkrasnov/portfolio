@@ -1,9 +1,9 @@
-import NavMenu from './components/NavMenu';
+import Header from './components/Header';
 
 export default function Home() {
   return (
     <div className="">
-      <NavMenu />
+      <Header />
       {/* <p className="text-xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde mollitia
         quo non debitis error aspernatur repellat suscipit eum voluptates
