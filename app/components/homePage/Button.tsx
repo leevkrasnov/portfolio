@@ -3,9 +3,19 @@ import { Check } from 'lucide-react';
 import { useState } from 'react';
 
 const Button = () => {
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'Резюме Краснов Л.В..pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const [isClicked, setIsClicked] = useState(false);
-  const buttonClicked = function () {
+  const buttonClicked = () => {
     setIsClicked(true);
+    downloadResume();
     setTimeout(() => {
       setIsClicked(false);
     }, 2000);
@@ -15,7 +25,7 @@ const Button = () => {
     <button
       onClick={buttonClicked}
       aria-label="Download resume"
-      className={`hover:border-blue-500 hover:bg-blue-100 relative flex justify-center items-center transition-all duration-700 border-2  text-gray-800 p-2 rounded-xl ${
+      className={`hover:border-blue-500 hover:bg-blue-100 relative flex justify-center items-center transition-all duration-700 border-2 text-2xl text-gray-800 p-2 px-4 rounded-xl ${
         isClicked
           ? 'bg-blue-100 border-blue-500'
           : 'bg-gray-200 border-gray-500'
