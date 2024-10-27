@@ -16,11 +16,11 @@ export default function RootLayout({
   return (
     <html lang="ru" data-lt-installed="true">
       <head>
-        <link rel="icon" href="/favicon-32x32.png" />
+        <link rel="icon" href="/apple-touch-icon.png" />
       </head>
       <body className={`${montserrat.className} antialiased`}>
         <Header />
-        {children}
+        <div className="mx-40 mt-10">{children}</div>
       </body>
     </html>
   );
