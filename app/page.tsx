@@ -3,7 +3,7 @@ import Button from './components/homePage/Button';
 
 export default function Home() {
   return (
-    <div className="mt-16 h-full w-full shadow-lg bg-gray-100 pb-10 px-10 rounded-xl">
+    <div className="mt-16 h-full w-full shadow-lg bg-gray-200 pb-10 px-10 rounded-xl">
       <div>
         <h1 className="text-6xl text-gray-800 pt-20">
           Junior Frontend Разработчик
@@ -11,9 +11,8 @@ export default function Home() {
       </div>
       <div className="flex mb-20">
         <div className="flex-1 text-2xl mt-8 text-gray-700">
-          <h2 className=" text-4xl text-gray-800">Привет!</h2>
           <p className="mt-4">
-            Меня зовут <span className="italic">Лев</span>.
+            Привет! Меня зовут <span className="italic">Лев</span>.
           </p>
           <p className="mt-2">
             Я — начинающий веб-разработчик, специализирующийся на React и
