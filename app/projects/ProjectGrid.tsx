@@ -2,7 +2,6 @@
 import { FC } from 'react';
 import { projects } from './projectList';
 import Image from 'next/image';
-import { ExternalLink } from 'lucide-react';
 
 const ProjectGrid: FC = () => {
   return (

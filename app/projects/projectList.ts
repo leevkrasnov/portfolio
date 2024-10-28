@@ -1,4 +1,4 @@
-export type Project = {
+type Project = {
   id: number;
   name: string;
   technologies: Technology[];
@@ -6,13 +6,13 @@ export type Project = {
   platforms: Platform[];
 };
 
-export type Platform = {
+type Platform = {
   name: string;
   url?: string;
   icon: string;
 };
 
-export type Technology = {
+type Technology = {
   name: string;
   icon: string;
 };
