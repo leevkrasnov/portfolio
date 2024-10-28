@@ -28,7 +28,7 @@ const Button = () => {
       className={`hover:border-blue-500 hover:bg-blue-100 relative flex justify-center items-center transition-all duration-700 border-2 text-2xl text-gray-800 p-2 px-4 rounded-xl ${
         isClicked
           ? 'bg-blue-100 border-blue-500'
-          : 'bg-gray-200 border-gray-500'
+          : 'bg-gray-100 border-gray-500'
       } `}
     >
       <div className="flex items-center justify-center w-full h-full">

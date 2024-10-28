@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-200;
+  @apply bg-gray-100;
 }
 
 .nav-element {
@@ -15,7 +15,7 @@ body {
 }
 
 .nav-block {
-  @apply bg-gray-200 shadow-md rounded-md border-b border-gray-300 flex justify-between items-center text-center w-screen h-10 md:h-12 lg:h-16 px-3 md:px-10 mt-1;
+  @apply bg-gray-100 shadow-md rounded-md border-b border-gray-200 flex justify-between items-center text-center w-screen h-10 md:h-12 lg:h-16 px-3 md:px-10 mt-1;
 }
 
 @layer base {

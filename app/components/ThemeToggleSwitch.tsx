@@ -17,8 +17,8 @@ const ThemeToggleSwitch = () => {
         aria-label="Toggle Theme"
         className={`hidden md:flex items-center justify-center relative px-3 w-16 h-8 rounded-full hover:border-orange-500 transition-all duration-700 ${
           isDark
-            ? 'bg-gray-300 border border-orange-500 shadow-md'
-            : 'bg-gray-200 border border-gray-300 shadow-sm'
+            ? 'bg-gray-100 border border-orange-500 shadow-md'
+            : 'bg-gray-100 border border-gray-300 shadow-sm'
         }`}
       >
         <div
@@ -29,12 +29,12 @@ const ThemeToggleSwitch = () => {
           {isDark ? (
             <Moon
               strokeWidth={1.5}
-              className="button-theme w-6 h-6 text-gray-700"
+              className="button-theme w-6 h-6 text-gray-800"
             />
           ) : (
             <SunMedium
               strokeWidth={1.5}
-              className="button-theme w-6 h-6 text-gray-700"
+              className="button-theme w-6 h-6 text-gray-800"
             />
           )}
         </div>
