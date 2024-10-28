@@ -22,10 +22,9 @@ export const projects: Project[] = [
     id: 1,
     name: 'Создание верстки на базе репозитория',
     technologies: [
-      { name: 'JavaScript', icon: '/logo-icons/Javascript.svg' },
       { name: 'React', icon: '/logo-icons/React.svg' },
       { name: 'Vite', icon: '/logo-icons/Vite.svg' },
-      { name: 'Tailwind', icon: '/logo-icons/Tailwind.svg' },
+      { name: 'TailwindCSS', icon: '/logo-icons/Tailwind.svg' },
     ],
     description:
       'Код написан с нуля, основываясь на существующем репозитории от "Jonas Schmedtmann".\nОсновной задачей было углубленное изучение пропсов и компонентов в React. Для сборки использовал Vite, что обеспечило высокую скорость разработки и удобство настройки.\nВ процессе я впервые использовал пакетный менеджер pnpm, который зарекомендовал себя как эффективная альтернатива npm.',
@@ -47,7 +46,7 @@ export const projects: Project[] = [
     name: 'Проект в рамках официального курса Next.js',
     technologies: [
       { name: 'Next.js', icon: '/logo-icons/Next.svg' },
-      { name: 'Postgre', icon: '/logo-icons/Postgre.svg' },
+      { name: 'PostgreSQL', icon: '/logo-icons/Postgre.svg' },
     ],
     description:
       'Выполняется мной в рамках официального курса по Next.js.\nНа текущем этапе я изучил и внедрил несколько ключевых функций:\n1. Добавление и оптимизация шрифтов и изображений для повышения производительности. \n2. Создание макетов и страниц, а также навигация между ними.\n3. Настройка базы данных PostgreSQL с использованием библиотеки @vercel/postgres.\n\nКурс продолжается, и по мере прохождения я буду выкладывать обновления о прогрессе и добавленных функциях.',
@@ -68,8 +67,8 @@ export const projects: Project[] = [
     id: 3,
     name: 'Практика JavaScript: учебный проект',
     technologies: [
-      { name: 'JavaScript', icon: '/logo-icons/Javascript.svg' },
-      { name: 'Npm', icon: '/logo-icons/Nmp.svg' },
+      { name: 'bash', icon: '/logo-icons/Javascript.svg' },
+      { name: 'npm', icon: '/logo-icons/Nmp.svg' },
     ],
     description:
       'Проект представляет собой интерактивное приложение.\nЭто мой первый проект на платформе Hexlet, и его цель — продемонстрировать базовое понимание работы с JavaScript и взаимодействие с пользователем.',
@@ -92,9 +91,8 @@ export const projects: Project[] = [
     name: 'Практика навыков',
     technologies: [
       { name: 'Typescript', icon: '/logo-icons/Typescript.svg' },
-      { name: 'Shadcn', icon: '/logo-icons/Shadcn.svg' },
       { name: 'React', icon: '/logo-icons/React.svg' },
-      { name: 'Tailwind', icon: '/logo-icons/Tailwind.svg' },
+      { name: 'TailwindCSS', icon: '/logo-icons/Tailwind.svg' },
     ],
     description:
       'В этом проекте я добавил модальное окно с помощью библиотеки shadcn и улучшил адаптивность сайта на Tailwind CSS. Исходная верстка была готова.\nВ процессе работы я освоил чтение кода, пропсы, хуки useState и типы в TypeScript.',
