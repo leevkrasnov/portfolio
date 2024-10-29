@@ -1,30 +1,27 @@
-'use client';
-import { FC } from 'react';
-import { projects } from './projectList';
-import Image from 'next/image';
-import { fira, nunito } from '../ui/fonts';
+"use client";
+import { FC } from "react";
+import { projects } from "./projectList";
+import Image from "next/image";
+import { fira, nunito } from "../ui/fonts";
 
 const ProjectGrid: FC = () => {
   return (
-    <div className="grid grid-cols-1 gap-14 md:grid-cols-2 mb-40">
+    <div className="mb-40 grid grid-cols-1 gap-14 md:grid-cols-2">
       {projects.map((project) => (
-        <div
-          key={project.id}
-          className="pb-4 bg-gray-50 border border-gray-200 rounded-2xl shadow-md flex flex-col h-full"
-        >
-          <div>
+        <div key={project.id} className="project-container pb-4">
+          <section className="p-8">
             <h2
-              className={`${nunito.className} flex justify-start p-8 text-3xl text-gray-800 mb-3`}
+              className={`${nunito.className} mb-8 flex justify-start text-3xl text-gray-800`}
             >
               {project.name}
             </h2>
-            <p className="text-gray-600 text-xl px-8 mb-8 whitespace-pre-line">
+            <p className="whitespace-pre-line text-xl text-gray-600">
               {project.description}
             </p>
-          </div>
+          </section>
 
-          <div className="flex justify-between px-8 pt-10 items-end mt-auto">
-            <div className={`flex gap-4 text-lg ${fira.className}`}>
+          <section className="mt-auto flex justify-between p-8">
+            <div className={`flex items-end gap-4 text-lg ${fira.className}`}>
               {project.technologies.map((tech) => (
                 <div key={tech.name}>{tech.name}</div>
               ))}
@@ -39,7 +36,7 @@ const ProjectGrid: FC = () => {
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
-                  <button className="flex items-center justify-center bg-gray-200 py-2 px-8 border border-gray-300 rounded-full transition-all duration-300 ease-in-out hover:bg-gray-100 hover:border-orange-400 hover:rotate-6">
+                  <button className="project-button grid-cols-2">
                     <Image
                       src={platform.icon}
                       alt={platform.name}
@@ -51,7 +48,7 @@ const ProjectGrid: FC = () => {
                 </a>
               ))}
             </div>
-          </div>
+          </section>
         </div>
       ))}
     </div>

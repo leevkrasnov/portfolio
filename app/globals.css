@@ -6,16 +6,28 @@ body {
   @apply bg-gray-100;
 }
 
-.nav-element {
-  @apply flex items-center text-lg md:text-xl lg:text-2xl hover:text-black hover:scale-110 transition-all duration-500;
+.text-adaptive {
+  @apply text-sm md:text-xl lg:text-2xl;
 }
 
-.button-theme {
-  @apply flex items-center text-lg md:text-xl lg:text-2xl hover:text-black transition-all duration-500;
+.nav-element {
+  @apply flex items-center transition-all duration-500 hover:scale-110 hover:text-black;
 }
 
 .nav-block {
-  @apply bg-gray-100 shadow-md rounded-md border-b border-gray-200 flex justify-between items-center text-center w-screen h-10 md:h-12 lg:h-16 px-3 md:px-10 mt-1;
+  @apply mt-1 flex h-10 w-screen items-center justify-between rounded-md border-b border-gray-200 bg-gray-100 px-3 text-center shadow-md md:h-12 md:px-10 lg:h-16;
+}
+
+.button-resume {
+  @apply flex items-center text-lg transition-all duration-500 hover:text-black md:text-xl lg:text-2xl;
+}
+
+.project-button {
+  @apply rounded-full border border-gray-300 bg-gray-200 px-8 py-2 transition-all duration-300 ease-in-out hover:rotate-3 hover:border-orange-400 hover:bg-gray-100;
+}
+
+.project-container {
+  @apply flex h-full flex-col rounded-2xl border border-gray-200 bg-gray-50 shadow-md;
 }
 
 @layer base {

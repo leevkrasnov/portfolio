@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
-import { montserrat } from './ui/fonts';
-import './globals.css';
-import Header from './components/Header';
+import type { Metadata } from "next";
+import { montserrat } from "./ui/fonts";
+import "./globals.css";
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
-  title: 'Лев Краснов',
-  description: 'Портфолио Front-end web development',
+  title: "Лев Краснов",
+  description: "Портфолио Front-end web development",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
       </head>
       <body className={`${montserrat.className} antialiased`}>
         <Header />
-        <div className="mx-20 mt-16">{children}</div>
+        <div className="mx-4 mt-16 px-4 md:px-16">{children}</div>
       </body>
     </html>
   );

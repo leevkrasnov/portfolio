@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { SunMedium, Moon } from 'lucide-react';
-import { useState } from 'react';
+import { SunMedium, Moon } from "lucide-react";
+import { useState } from "react";
 
 const ThemeToggleSwitch = () => {
   const [isDark, setIsDark] = useState(false);
@@ -15,42 +15,33 @@ const ThemeToggleSwitch = () => {
       <button
         onClick={toggleTheme}
         aria-label="Toggle Theme"
-        className={`hidden md:flex items-center justify-center relative px-3 w-16 h-8 rounded-full hover:border-orange-500 transition-all duration-700 ${
+        className={`relative hidden h-8 w-16 items-center justify-center rounded-full px-3 transition-all duration-700 hover:border-orange-500 md:flex ${
           isDark
-            ? 'bg-gray-100 border border-orange-500 shadow-md'
-            : 'bg-gray-100 border border-gray-300 shadow-sm'
+            ? "border border-orange-500 bg-gray-100 shadow-md"
+            : "border border-gray-300 bg-gray-100 shadow-sm"
         }`}
       >
         <div
-          className={`absolute left-1 transition-transform duration-500 transform ${
-            isDark ? 'translate-x-7' : 'translate-x-1'
+          className={`absolute left-1 transform transition-transform duration-700 ${
+            isDark ? "translate-x-7" : "translate-x-1"
           }`}
         >
           {isDark ? (
-            <Moon
-              strokeWidth={1.5}
-              className="button-theme w-6 h-6 text-gray-800"
-            />
+            <Moon strokeWidth={1.5} className="h-6 w-6 text-gray-800" />
           ) : (
-            <SunMedium
-              strokeWidth={1.5}
-              className="button-theme w-6 h-6 text-gray-800"
-            />
+            <SunMedium strokeWidth={1.5} className="h-6 w-6 text-gray-800" />
           )}
         </div>
       </button>
       <button
         onClick={toggleTheme}
         aria-label="Toggle Theme"
-        className="md:hidden flex items-center justify-center w-8 h-8 rounded-full transition-colors duration-500"
+        className="flex h-4 w-4 items-center justify-center rounded-full transition-colors duration-500 md:hidden"
       >
         {isDark ? (
-          <Moon
-            strokeWidth={1.5}
-            className="w-5 h-5 shadow-md rounded-full text-gray-700"
-          />
+          <Moon strokeWidth={1.5} className="rounded-full text-gray-700" />
         ) : (
-          <SunMedium strokeWidth={1.5} className="w-5 h-5 text-gray-700" />
+          <SunMedium strokeWidth={1.5} className="text-gray-700" />
         )}
       </button>
     </div>
