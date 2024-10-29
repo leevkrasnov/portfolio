@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/apple-touch-icon.png" />
       </head>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${montserrat.className} overflow-x-hidden antialiased`}>
         <Header />
         <div className="mx-4 mt-16 px-4 md:px-16">{children}</div>
       </body>
