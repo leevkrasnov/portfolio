@@ -44,7 +44,7 @@ const Button = () => {
             isClicked ? "opacity-100" : "opacity-0"
           }`}
         >
-          <Check className="h-10 w-10" />
+          <Check className="lg:10 lg:10 h-6 w-6 md:h-8 md:w-8" />
         </span>
       </div>
     </button>
