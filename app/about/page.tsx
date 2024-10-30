@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <section className="flex h-full w-full flex-col rounded-xl bg-gray-100 p-4 text-gray-800 shadow-lg dark:bg-gray-700 dark:text-gray-300 md:p-8">
+      <section className="flex flex-col rounded-xl bg-gray-100 p-4 text-gray-800 shadow-lg dark:bg-gray-700 dark:text-gray-300 md:p-8">
         <h1 className="text-xl md:text-3xl">
           Немного о том, что за кадром резюме
         </h1>
