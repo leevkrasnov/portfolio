@@ -1,5 +1,5 @@
 import NavMenu from "./NavMenu";
-import { House, Globe } from "lucide-react";
+import { House } from "lucide-react";
 import Link from "next/link";
 import ThemeToggleSwitch from "./ThemeToggleSwitch";
 
