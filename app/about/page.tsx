@@ -1,24 +1,24 @@
 export default function About() {
   return (
     <div>
-      <section className="mb-40 flex h-full w-full flex-col rounded-xl bg-gray-100 p-4 shadow-lg md:p-8">
+      <section className="flex h-full w-full flex-col rounded-xl bg-gray-100 p-4 text-gray-800 shadow-lg dark:bg-gray-700 dark:text-gray-300 md:p-8">
         <h1 className="text-xl md:text-3xl">
           Немного о том, что за кадром резюме
         </h1>
         <article className="mt-6 text-sm md:text-xl">
-          <h2>
+          <p className="md:leading-relaxed">
             Я верю, что не только профессиональные навыки определяют
             разработчика.
-          </h2>
-          <p>
-            В свободное время люблю погружаться в чтение — научно-популярной и,
-            порой, художественной литературы. <br />В списке любимых авторов —
-            Талеб, Пауло Коэльо, Сенека, Фестингер. <br />
+          </p>
+          <p className="md:leading-relaxed">
+            В свободное время люблю погружаться в чтение научно-популярной и
+            художественной литературы. <br />В списке любимых авторов — Талеб,
+            Пауло Коэльо, Сенека, Фестингер. <br />
             Помимо книг, меня привлекает мир криптовалюты, особенно интересно
             наблюдать, как технологии меняют наше будущее.
           </p>
           <br />
-          <p className="mb-20">
+          <p className="mb-20 md:leading-relaxed">
             Мой путь в IT начался с того, что, изучив различные учебные
             платформы, я выбрал курс по Python на Hexlet. <br />В процессе
             поработал с инструментами верстки и запомнил, что мне действительно

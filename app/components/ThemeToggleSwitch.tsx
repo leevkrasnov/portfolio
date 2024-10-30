@@ -1,14 +1,10 @@
 "use client";
 
+import useTheme from "./themeChoose";
 import { SunMedium, Moon } from "lucide-react";
-import { useState } from "react";
 
 const ThemeToggleSwitch = () => {
-  const [isDark, setIsDark] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-  };
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div>
@@ -16,18 +12,21 @@ const ThemeToggleSwitch = () => {
         onClick={toggleTheme}
         aria-label="Toggle Theme"
         className={`relative hidden h-8 w-16 items-center justify-center rounded-full px-3 transition-all duration-700 hover:border-orange-500 md:flex ${
-          isDark
-            ? "border border-orange-500 bg-gray-100 shadow-md"
+          theme === "dark"
+            ? "border border-yellow-700 bg-gray-700 shadow-md"
             : "border border-gray-300 bg-gray-100 shadow-sm"
         }`}
       >
         <div
           className={`absolute left-1 transform transition-transform duration-700 ${
-            isDark ? "translate-x-7" : "translate-x-1"
+            theme === "dark" ? "translate-x-7" : "translate-x-1"
           }`}
         >
-          {isDark ? (
-            <Moon strokeWidth={1.5} className="h-6 w-6 text-gray-800" />
+          {theme === "dark" ? (
+            <Moon
+              strokeWidth={1.5}
+              className="h-6 w-6 text-gray-800 dark:text-gray-400"
+            />
           ) : (
             <SunMedium strokeWidth={1.5} className="h-6 w-6 text-gray-800" />
           )}
@@ -38,8 +37,8 @@ const ThemeToggleSwitch = () => {
         aria-label="Toggle Theme"
         className="flex h-4 w-4 items-center justify-center rounded-full transition-colors duration-500 md:hidden"
       >
-        {isDark ? (
-          <Moon strokeWidth={1.5} className="rounded-full text-gray-700" />
+        {theme === "dark" ? (
+          <Moon strokeWidth={1.5} className="rounded-full dark:text-gray-400" />
         ) : (
           <SunMedium strokeWidth={1.5} className="text-gray-700" />
         )}

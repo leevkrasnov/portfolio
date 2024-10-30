@@ -25,10 +25,10 @@ const Button = () => {
     <button
       onClick={buttonClicked}
       aria-label="Download resume"
-      className={`relative flex items-center justify-center rounded-xl border p-2 text-gray-800 transition-all duration-700 hover:border-blue-500 hover:bg-blue-100 md:border-2 md:px-4 md:text-xl lg:text-2xl ${
+      className={`relative flex items-center justify-center rounded-xl border p-2 text-gray-800 shadow-md transition-all duration-700 hover:scale-95 hover:border-purple-500 hover:bg-purple-50 dark:border-yellow-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:border-orange-500 dark:hover:bg-gray-800 md:border-2 md:px-6 md:text-xl lg:text-2xl ${
         isClicked
-          ? "border-blue-500 bg-blue-100"
-          : "border-gray-500 bg-gray-100"
+          ? "border-purple-500 bg-purple-50 dark:border-orange-500 dark:bg-gray-800"
+          : "border-gray-500 bg-gray-50"
       } `}
     >
       <div className="flex h-full w-full items-center justify-center">
