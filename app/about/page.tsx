@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <section className="flex flex-col rounded-xl bg-gray-100 p-4 text-gray-800 shadow-lg dark:bg-gray-700 dark:text-gray-300 md:p-8">
+      <section className="mb-28 flex flex-col rounded-xl bg-gray-100 p-4 text-gray-800 shadow-lg dark:bg-gray-700 dark:text-gray-300 md:mb-20 md:p-8">
         <h1 className="text-xl md:text-3xl">
           Немного о том, что за кадром резюме
         </h1>
@@ -18,7 +18,7 @@ export default function About() {
             наблюдать, как технологии меняют наше будущее.
           </p>
           <br />
-          <p className="mb-8 md:mb-20 md:leading-relaxed">
+          <p className="md:leading-relaxed">
             Мой путь в IT начался с того, что, изучив различные учебные
             платформы, я выбрал курс по Python на Hexlet. <br />В процессе
             поработал с инструментами верстки и запомнил, что мне действительно

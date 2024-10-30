@@ -5,7 +5,7 @@ import Button from "./components/ResumeButton";
 
 export default function Home() {
   return (
-    <div className="h-full w-full rounded-xl bg-gray-100 p-4 shadow-lg dark:bg-gray-800 dark:shadow-gray-900 md:p-8">
+    <div className="mb-28 h-full w-full rounded-xl bg-gray-100 p-4 shadow-lg dark:bg-gray-800 dark:shadow-gray-900 md:p-8">
       <section>
         <h1 className="text-xl text-gray-800 dark:text-gray-300 md:text-3xl lg:py-8 lg:text-6xl">
           Junior Frontend Разработчик

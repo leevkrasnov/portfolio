@@ -6,7 +6,7 @@ import { fira, nunito } from "../ui/fonts";
 
 const ProjectGrid: FC = () => {
   return (
-    <div className="mb-40 grid grid-cols-1 gap-14 lg:grid-cols-2">
+    <div className="mb-28 grid grid-cols-1 gap-14 lg:grid-cols-2">
       {projects.map((project) => (
         <div key={project.id} className="project-container pb-4">
           <section className="p-4 md:p-8">
