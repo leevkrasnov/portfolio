@@ -18,7 +18,7 @@ export default function About() {
             наблюдать, как технологии меняют наше будущее.
           </p>
           <br />
-          <p className="mb-20 md:leading-relaxed">
+          <p className="mb-8 md:mb-20 md:leading-relaxed">
             Мой путь в IT начался с того, что, изучив различные учебные
             платформы, я выбрал курс по Python на Hexlet. <br />В процессе
             поработал с инструментами верстки и запомнил, что мне действительно
