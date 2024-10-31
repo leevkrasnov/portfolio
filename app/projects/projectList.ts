@@ -99,7 +99,7 @@ export const projects: Project[] = [
     platforms: [
       {
         name: "Vercel",
-        url: "https://yoga-session.vercel.app/",
+        url: "https://astro-yoga-session.vercel.app/",
         icon: "/logo-icons/Vercel.svg",
       },
       {
