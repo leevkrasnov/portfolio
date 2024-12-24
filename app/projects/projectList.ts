@@ -14,12 +14,40 @@ type Platform = {
 
 type Technology = {
   name: string;
-  icon: string;
+  icon?: string;
 };
 
 export const projects: Project[] = [
   {
     id: 1,
+    name: "Криптопортфолио с динамическим отображением данных",
+    technologies: [
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "Ant Design" },
+      { name: "Vite" },
+      { name: "Lottie" },
+      { name: "Express" },
+      { name: "Supabase" },
+    ],
+    description:
+      "Веб-приложение для управления криптопортфелем, позволяющее добавлять сделки, отслеживать динамику роста или убытков, с демо-режимом для демонстрации функционала.\n\nДостижения: \n— Создал адаптивный интерфейс с Tailwind и Ant Design. \n— Настроил связку React + Express для работы с Supabase. \n— Внедрил анимации Lottie для улучшения UX. \n— Развернул сервер на Railway, организовал масштабируемую архитектуру.",
+
+    platforms: [
+      {
+        name: "Site",
+        url: "https://www.coin-book.ru/",
+        icon: "/logo-icons/CoinBook.svg",
+      },
+      {
+        name: "Git",
+        url: "https://github.com/leevkrasnov/crypto-portfolio",
+        icon: "/logo-icons/Git.svg",
+      },
+    ],
+  },
+  {
+    id: 2,
     name: "Создание верстки на базе репозитория",
     technologies: [
       { name: "React", icon: "/logo-icons/React.svg" },
@@ -41,28 +69,29 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    id: 2,
-    name: "Проект в рамках официального курса Next.js",
-    technologies: [
-      { name: "Next.js", icon: "/logo-icons/Next.svg" },
-      { name: "PostgreSQL", icon: "/logo-icons/Postgre.svg" },
-    ],
-    description:
-      "Выполняется мной в рамках официального курса по Next.js.\nНа текущем этапе я изучил и внедрил несколько ключевых функций:\n— Добавление и оптимизация шрифтов и изображений для повышения производительности. \n— Создание макетов и страниц, а также навигация между ними.\n— Настройка базы данных PostgreSQL с использованием библиотеки @vercel/postgres.\n\nКурс продолжается, и по мере прохождения я буду выкладывать обновления о прогрессе и добавленных функциях.",
-    platforms: [
-      {
-        name: "Vercel",
-        url: "https://nextjs-dashboard-beta-nine-53.vercel.app/",
-        icon: "/logo-icons/Vercel.svg",
-      },
-      {
-        name: "Git",
-        url: "https://github.com/leevkrasnov/nextjs-dashboard",
-        icon: "/logo-icons/Git.svg",
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   name: "Проект в рамках официального курса Next.js",
+  //   technologies: [
+  //     { name: "Next.js", icon: "/logo-icons/Next.svg" },
+  //     { name: "PostgreSQL", icon: "/logo-icons/Postgre.svg" },
+  //   ],
+  //   description:
+  //     "Выполняется мной в рамках официального курса по Next.js.\nНа текущем этапе я изучил и внедрил несколько ключевых функций:\n— Добавление и оптимизация шрифтов и изображений для повышения производительности. \n— Создание макетов и страниц, а также навигация между ними.\n— Настройка базы данных PostgreSQL с использованием библиотеки @vercel/postgres.\n\nКурс продолжается, и по мере прохождения я буду выкладывать обновления о прогрессе и добавленных функциях.",
+  //   platforms: [
+  //     {
+  //       name: "Vercel",
+  //       url: "https://nextjs-dashboard-beta-nine-53.vercel.app/",
+  //       icon: "/logo-icons/Vercel.svg",
+  //     },
+  //     {
+  //       name: "Git",
+  //       url: "https://github.com/leevkrasnov/nextjs-dashboard",
+  //       icon: "/logo-icons/Git.svg",
+  //     },
+  //   ],
+  // },
+
   {
     id: 3,
     name: "Практика JavaScript: учебный проект",
@@ -86,29 +115,29 @@ export const projects: Project[] = [
     ],
   },
 
-  {
-    id: 4,
-    name: "Практика навыков",
-    technologies: [
-      { name: "Typescript", icon: "/logo-icons/Typescript.svg" },
-      { name: "React", icon: "/logo-icons/React.svg" },
-      { name: "TailwindCSS", icon: "/logo-icons/Tailwind.svg" },
-    ],
-    description:
-      "В этом проекте я добавил модальное окно с помощью библиотеки shadcn и улучшил адаптивность сайта на Tailwind CSS. Исходная верстка была готова.\nВ процессе работы я освоил чтение кода, пропсы, хуки useState и типы в TypeScript.",
-    platforms: [
-      {
-        name: "Vercel",
-        url: "https://astro-yoga-session.vercel.app/",
-        icon: "/logo-icons/Vercel.svg",
-      },
-      {
-        name: "Git",
-        url: "https://github.com/leevkrasnov/astro-yoga-session",
-        icon: "/logo-icons/Git.svg",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   name: "Практика навыков",
+  //   technologies: [
+  //     { name: "Typescript", icon: "/logo-icons/Typescript.svg" },
+  //     { name: "React", icon: "/logo-icons/React.svg" },
+  //     { name: "TailwindCSS", icon: "/logo-icons/Tailwind.svg" },
+  //   ],
+  //   description:
+  //     "В этом проекте я добавил модальное окно с помощью библиотеки shadcn и улучшил адаптивность сайта на Tailwind CSS. Исходная верстка была готова.\nВ процессе работы я освоил чтение кода, пропсы, хуки useState и типы в TypeScript.",
+  //   platforms: [
+  //     {
+  //       name: "Vercel",
+  //       url: "https://astro-yoga-session.vercel.app/",
+  //       icon: "/logo-icons/Vercel.svg",
+  //     },
+  //     {
+  //       name: "Git",
+  //       url: "https://github.com/leevkrasnov/astro-yoga-session",
+  //       icon: "/logo-icons/Git.svg",
+  //     },
+  //   ],
+  // },
 ];
 
 export default projects;
