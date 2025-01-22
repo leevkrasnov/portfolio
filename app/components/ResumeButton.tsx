@@ -5,8 +5,8 @@ import { useState } from "react";
 const Button = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Resume_Krasnov_Lev.pdf";
-    link.download = "Resume_Krasnov_Lev.pdf";
+    link.href = "/CV_Krasnov_Lev.pdf";
+    link.download = "CV_Krasnov_Lev.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
